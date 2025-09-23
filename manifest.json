@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "Dashify",
+    "description": "Add Rainbow Dash to the progress bar of many common video sites.",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "css" : ["site-styles/all.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "site-styles/*.css" ],
+            "matches": [ "*://*/*" ]
+        }
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "icons": {
+        "24": "icons/24.png",
+        "48": "icons/48.png",
+        "96": "icons/96.png",
+        "128": "icons/128.png",
+        "512": "icons/512.png"
+    },
+    "permissions": [
+        "scripting",
+        "storage"
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "dashify@ws4k.net"
+        }
+    },
+    "version": "0.1.0"
+}
