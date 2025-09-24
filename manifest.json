@@ -30,7 +30,10 @@
     ],
     "browser_specific_settings": {
         "gecko": {
-            "id": "dashify@ws4k.net"
+            "id": "dashify@ws4k.net",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
         }
     },
     "version": "0.1.0"
